@@ -1,6 +1,6 @@
 # =============================================================================
-# Mock ERP Service — Slim Container
-# Port: 8001 (Simulates SAP / NetSuite endpoints)
+# Mock ERP Service — Lightweight Slim Container
+# Port: 8001 (Simulates SAP / NetSuite endpoints, fast memory footprint)
 # =============================================================================
 
 FROM python:3.11-slim
@@ -9,12 +9,9 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
-    libpq5 \
-    gcc \
-    libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Install isolated ERP dependencies
+# Install isolated ERP dependencies from binary wheels
 RUN pip install --no-cache-dir \
     fastapi==0.110.0 \
     uvicorn==0.28.0 \

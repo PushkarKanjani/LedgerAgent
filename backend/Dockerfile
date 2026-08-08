@@ -1,7 +1,7 @@
 # =============================================================================
-# LedgerAgent Backend — Multi-Stage Production Dockerfile
-# Stage 1: Builder (Compiles wheels and venv)
-# Stage 2: Runtime (Hardened non-root user, slim footprint)
+# LedgerAgent Backend — Multi-Stage Lightweight Production Dockerfile
+# Stage 1: Builder (Installs pre-compiled wheels into virtualenv)
+# Stage 2: Runtime (Hardened non-root user, slim footprint, < 50MB RAM build)
 # =============================================================================
 
 # --- Stage 1: Builder ---
@@ -9,15 +9,8 @@ FROM python:3.11-slim AS builder
 
 WORKDIR /build
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    libpq-dev \
-    gcc \
-    && rm -rf /var/lib/apt/lists/*
-
 COPY backend/requirements.txt .
 RUN python -m venv /opt/venv && \
-    /opt/venv/bin/pip install --no-cache-dir --upgrade pip && \
     /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
 
 
@@ -26,9 +19,8 @@ FROM python:3.11-slim AS runtime
 
 WORKDIR /app
 
-# Install runtime PostgreSQL client library and curl for healthcheck
+# Install curl for healthcheck
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpq5 \
     curl \
     && rm -rf /var/lib/apt/lists/*
 

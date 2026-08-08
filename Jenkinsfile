@@ -25,20 +25,20 @@ pipeline {
         stage('2. Security Scan (Bandit)') {
             steps {
                 echo '🛡️ [Security] Running Bandit AST scan inside containerized Python 3.11...'
-                sh '''
-                    docker run --rm -v $(pwd):/app -w /app python:3.11-slim sh -c \
+                sh """
+                    docker run --rm -v ${WORKSPACE}:/app -w /app python:3.11-slim sh -c \
                         "pip install --quiet bandit && bandit -r backend/app -ll -ii || echo 'Bandit scan complete.'"
-                '''
+                """
             }
         }
 
         stage('3. Pytest Smoke Tests') {
             steps {
                 echo '🧪 [Unit Tests] Executing isolated regression suite inside Python 3.11 container...'
-                sh '''
-                    docker run --rm -v $(pwd):/app -w /app python:3.11-slim sh -c \
+                sh """
+                    docker run --rm -v ${WORKSPACE}:/app -w /app python:3.11-slim sh -c \
                         "pip install --quiet -r backend/requirements.txt && pytest tests/unit -v || echo 'Unit tests verified.'"
-                '''
+                """
             }
         }
 
