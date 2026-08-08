@@ -1,0 +1,57 @@
+{
+  "name": "LedgerAgent",
+  "folders": [
+    {
+      "path": ".",
+      "name": "ledger-agent",
+      "worktree": false
+    }
+  ],
+  "model": {
+    "default": "gemini-3.1-pro",
+    "fallback": "gemini-3.1-flash"
+  },
+  "agent": {
+    "mode": "manager",
+    "parallel_agents": 2,
+    "workspaces": [
+      {
+        "name": "backend",
+        "path": "./backend",
+        "model": "gemini-3.1-pro"
+      },
+      {
+        "name": "frontend",
+        "path": "./frontend",
+        "model": "gemini-3.1-flash"
+      }
+    ]
+  },
+  "context": {
+    "always_include": [
+      "AGENTS.md",
+      "backend/app/agent/schemas.py",
+      "backend/app/agent/graph.py",
+      "infra/rds/schema.sql"
+    ],
+    "exclude": [
+      "node_modules",
+      "__pycache__",
+      ".git",
+      "*.pyc",
+      ".venv"
+    ]
+  },
+  "skills": {
+    "custom": [
+      {
+        "name": "code-review",
+        "path": ".agents/skills/code-review"
+      },
+      {
+        "name": "langgraph-debug",
+        "path": ".agents/skills/langgraph-debug"
+      }
+    ]
+  }
+}
