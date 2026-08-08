@@ -1,0 +1,15 @@
+{
+    "Region":  "ap-south-1",
+    "AppSecurityGroupId":  "sg-03f50f67153bc8e73",
+    "PublicSubnets":  [
+                          "subnet-05401a9628c0d493d",
+                          "subnet-0a2f9b5aee260d6a9"
+                      ],
+    "PrivateSubnets":  [
+                           "subnet-0065e8bb745c79fbf",
+                           "subnet-08439459783c873c9"
+                       ],
+    "VpcId":  "vpc-0cbafdb6caf11d0c9",
+    "AlbSecurityGroupId":  "sg-0bbdd4c777d23babc",
+    "DbSecurityGroupId":  "sg-08bdd1a1164c9b1f3"
+}

@@ -1,0 +1,12 @@
+{
+    "Rules":  [
+                  {
+                      "Prefix":  "uploads/",
+                      "Status":  "Enabled",
+                      "ID":  "ExpireOldInvoicesAfter90Days",
+                      "Expiration":  {
+                                         "Days":  90
+                                     }
+                  }
+              ]
+}

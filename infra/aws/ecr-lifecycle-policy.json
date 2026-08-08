@@ -1,0 +1,16 @@
+{
+    "rules":  [
+                  {
+                      "selection":  {
+                                        "countNumber":  5,
+                                        "tagStatus":  "any",
+                                        "countType":  "imageCountMoreThan"
+                                    },
+                      "description":  "Retain only the 5 most recent container images to control storage costs",
+                      "action":  {
+                                     "type":  "expire"
+                                 },
+                      "rulePriority":  1
+                  }
+              ]
+}

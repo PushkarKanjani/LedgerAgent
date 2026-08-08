@@ -1,0 +1,10 @@
+{
+    "MasterUsername":  "ledgeradmin",
+    "DbName":  "ledgeragent",
+    "DbInstanceIdentifier":  "ledgeragent-postgres",
+    "SecretArn":  "ledgeragent/rds-master-credentials",
+    "Port":  5432,
+    "DbSubnetGroup":  "ledgeragent-db-subnet-group",
+    "DbSecurityGroupId":  "sg-08bdd1a1164c9b1f3",
+    "EndpointHost":  ""
+}
