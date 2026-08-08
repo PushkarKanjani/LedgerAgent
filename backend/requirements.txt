@@ -1,39 +1,31 @@
 # =============================================================================
-# LedgerAgent Backend Dependencies (Production & Docker Standard)
-# Python Target: 3.11+
+# LedgerAgent Backend Production Dependencies
+# Target: Python 3.11+ | Lightweight Memory Footprint for Cloud Containers
 # =============================================================================
 
-# FastAPI & Web Server
+# Web Server & Framework
 fastapi>=0.110.0
 uvicorn[standard]>=0.28.0
 python-multipart>=0.0.9
 pydantic>=2.6.0
 pydantic-settings>=2.2.0
 httpx>=0.27.0
+email-validator>=2.0.0
 
-# Authentication & Security
+# Authentication & Cryptography
 bcrypt>=4.1.0
 pyjwt>=2.8.0
 
-# LangGraph & Workflow Engine
+# Workflow Engine & State Machine
 langgraph>=0.2.0
 langchain-core>=0.2.0
 redis>=5.0.0
 
-# Database & Storage
+# Database & Cloud Storage
 psycopg2-binary>=2.9.9
 sqlalchemy>=2.0.28
 alembic>=1.13.1
 boto3>=1.34.0
 
-# PDF & Synthetic Generation
+# PDF Processing
 fpdf2>=2.7.8
-
-# Observability & Tracing
-langfuse>=2.20.0
-
-# Testing & Evals
-pytest>=8.0.0
-pytest-asyncio>=0.23.0
-deepeval>=0.21.0
-email-validator>=2.0.0
