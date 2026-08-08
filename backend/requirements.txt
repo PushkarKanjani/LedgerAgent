@@ -1,0 +1,34 @@
+# =============================================================================
+# LedgerAgent Backend Dependencies
+# Python Target: 3.11+
+# =============================================================================
+
+# FastAPI & Web Server
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+python-multipart>=0.0.9
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# LangGraph & Workflow Engine
+langgraph>=0.2.0
+langchain-core>=0.2.0
+redis>=5.0.0
+
+# Database & Storage
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.28
+alembic>=1.13.1
+boto3>=1.34.0
+
+# PDF & Synthetic Generation
+fpdf2>=2.7.8
+
+# Observability & Tracing
+langfuse>=2.20.0
+
+# Testing & Evals
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0
+deepeval>=0.21.0
