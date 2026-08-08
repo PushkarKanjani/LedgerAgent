@@ -17,9 +17,9 @@
     transition: background-color 200ms ease, color 200ms ease;
   }
 
-  html.dark {
-    color: #E5E5E5;
-    background-color: #0F0F0F;
+  html.dark, html.dark body, html.dark #root {
+    color: #E5E5E5 !important;
+    background-color: #0F0F0F !important;
   }
   
   /* Selection styling */
@@ -37,6 +37,35 @@
   .tabular-nums {
     font-variant-numeric: tabular-nums;
   }
+}
+
+/* Global Dark Mode Directives for Swiss Editorial & Cinematic Surfaces */
+html.dark .bg-paper {
+  background-color: #0F0F0F !important;
+}
+
+html.dark .bg-paperAlt {
+  background-color: #1A1A1A !important;
+}
+
+html.dark .text-ink {
+  color: #E5E5E5 !important;
+}
+
+html.dark .text-inkMuted {
+  color: #999999 !important;
+}
+
+html.dark .border-hairline {
+  border-color: #2A2A2A !important;
+}
+
+html.dark .divide-hairline > * + * {
+  border-color: #2A2A2A !important;
+}
+
+html.dark .border-hairlineDark {
+  border-color: #333333 !important;
 }
 
 /* Hairline scrollbar */

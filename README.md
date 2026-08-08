@@ -70,6 +70,10 @@ python -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 *API Docs: http://localhost:8000/docs | Dependency Health: http://localhost:8000/health*
 
+### 💡 Local Troubleshooting & Tips
+- **Vite Tailwind Token Reload:** If you modify `frontend/tailwind.config.js` or root theme color definitions, you must restart the Vite dev server (`npm run dev` in Terminal 3) for the Tailwind CSS compiler to re-index the class manifest.
+- **Theme Persistence:** Theme preferences are stored in browser `localStorage('ledger_theme')` and automatically apply synchronously to `<html class="dark">` to eliminate any flash of unstyled theme.
+
 ### Terminal 3 — React Vite Dashboard (`:5173`)
 ```powershell
 cd c:\MyDrive\LedgerAgent\frontend
