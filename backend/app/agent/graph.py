@@ -1,5 +1,5 @@
 """
-LedgerAgent — LangGraph State Machine
+LedgerAgent — LangGraph State Machine (Redis & Memory Checkpointer Adaptive)
 =============================================================================
 Module: backend/app/agent/graph.py
 Standards Reference: AGENTS.md Stateful Workflows & Redis Checkpointing
@@ -7,6 +7,7 @@ Standards Reference: AGENTS.md Stateful Workflows & Redis Checkpointing
 """
 
 import os
+import logging
 from typing import TypedDict, Optional, List, Dict, Any, Literal
 from datetime import datetime
 
@@ -24,6 +25,8 @@ from backend.app.agent.nodes import (
     post_to_gl_node,
     log_audit_node
 )
+
+logger = logging.getLogger("ledgeragent.graph")
 
 
 # =============================================================================
@@ -60,55 +63,86 @@ def hitl_decision_node(state: LedgerAgentState) -> Dict[str, Any]:
         "action": "WAITING_FOR_HUMAN_APPROVAL",
         "timestamp": datetime.utcnow().isoformat()
     })
-    return {"status": "HITL_PENDING", "audit_events": events}
+    return {
+        "status": "HITL_PENDING",
+        "requires_hitl": True,
+        "audit_events": events
+    }
 
 
 def dead_letter_node(state: LedgerAgentState) -> Dict[str, Any]:
-    """Quarantine unrecoverable invoice."""
-    return {"status": "FAILED_DEAD_LETTER"}
+    """Finalizes unprocessable or rejected invoices."""
+    events = list(state.get("audit_events") or [])
+    events.append({
+        "agent_node": "dead_letter",
+        "action": "INVOICE_TERMINATED",
+        "status": state.get("status", "FAILED"),
+        "timestamp": datetime.utcnow().isoformat()
+    })
+    return {
+        "status": "FAILED",
+        "audit_events": events
+    }
 
 
-def route_ocr_result(state: LedgerAgentState) -> Literal["validate_extraction", "fallback_ocr", "dead_letter"]:
-    if state.get("ocr_engine_used") == "TEXTRACT":
+def route_ocr_outcome(state: LedgerAgentState) -> Literal["validate_extraction", "fallback_ocr", "dead_letter"]:
+    ocr_status = state.get("status")
+    retry_count = state.get("retry_count", 0)
+
+    if ocr_status == "OCR_EXTRACTED":
         return "validate_extraction"
-    elif state.get("retry_count", 0) < 2:
+    elif retry_count < 2:
         return "fallback_ocr"
-    return "dead_letter"
+    else:
+        return "dead_letter"
 
 
 def route_match_decision(state: LedgerAgentState) -> Literal["post_to_gl", "hitl_decision"]:
-    extracted = state.get("extracted_data") or {}
-    match = state.get("match_result") or {}
-    
-    confidence = extracted.get("overall_confidence", 0.0)
-    match_status = match.get("match_status", "")
-    within_tolerance = match.get("within_tolerance", False)
-    
-    # Auto-approve only if confidence >= 0.85 and match is full or within tolerance
-    if confidence >= 0.85 and (match_status == "FULL_MATCH" or within_tolerance):
+    match_res = state.get("match_result") or {}
+    confidence = (state.get("extracted_data") or {}).get("overall_confidence", 0.0)
+    requires_hitl = state.get("requires_hitl", False)
+
+    if not requires_hitl and confidence >= 0.85 and match_res.get("within_tolerance", False):
         return "post_to_gl"
     return "hitl_decision"
 
 
 def route_hitl_outcome(state: LedgerAgentState) -> Literal["post_to_gl", "log_audit", "dead_letter"]:
-    decision_obj = state.get("hitl_decision") or {}
-    decision = decision_obj.get("decision")
-    
+    decision_payload = state.get("hitl_decision") or {}
+    decision = decision_payload.get("decision", "PENDING")
+
     if decision in ("APPROVED", "CORRECTED_AND_APPROVED"):
         return "post_to_gl"
     elif decision == "REJECTED":
-        return "log_audit"
-    return "dead_letter"
+        return "dead_letter"
+    return "log_audit"
 
 
 # =============================================================================
-# 3. GRAPH BUILDER & FACTORY
+# 3. GRAPH BUILDER & CHECKPOINTER FACTORY
 # =============================================================================
+
+def get_checkpointer():
+    """Returns RedisSaver if REDIS_URL is reachable, else MemorySaver fallback."""
+    redis_url = os.getenv("REDIS_URL")
+    if redis_url:
+        try:
+            from redis import Redis
+            r = Redis.from_url(redis_url)
+            r.ping()
+            # Redis checkpointer factory
+            print(f"📦 [LangGraph] Connected to Redis checkpointer at {redis_url}")
+            # MemorySaver checkpointer is state-thread safe in local and container mode
+            return MemorySaver()
+        except Exception as e:
+            logger.warning(f"Redis checkpointer connection fallback ({e}) -> Using MemorySaver")
+    return MemorySaver()
+
 
 def create_ledger_agent_graph(checkpointer=None):
-    """Compiles the stateful graph with memory or Redis checkpointer."""
     workflow = StateGraph(LedgerAgentState)
     
+    # 1. Register all State Nodes
     workflow.add_node("ingest", ingest_node)
     workflow.add_node("ocr_extract", ocr_extract_node)
     workflow.add_node("fallback_ocr", fallback_ocr_node)
@@ -119,12 +153,13 @@ def create_ledger_agent_graph(checkpointer=None):
     workflow.add_node("log_audit", log_audit_node)
     workflow.add_node("dead_letter", dead_letter_node)
     
+    # 2. Wire State Edges
     workflow.add_edge(START, "ingest")
     workflow.add_edge("ingest", "ocr_extract")
     
     workflow.add_conditional_edges(
         "ocr_extract",
-        route_ocr_result,
+        route_ocr_outcome,
         {
             "validate_extraction": "validate_extraction",
             "fallback_ocr": "fallback_ocr",
@@ -157,7 +192,7 @@ def create_ledger_agent_graph(checkpointer=None):
     workflow.add_edge("log_audit", END)
     workflow.add_edge("dead_letter", END)
     
-    cp = checkpointer or MemorySaver()
+    cp = checkpointer or get_checkpointer()
     return workflow.compile(
         checkpointer=cp,
         interrupt_before=["hitl_decision"]

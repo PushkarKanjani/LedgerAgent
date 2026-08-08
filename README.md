@@ -49,9 +49,44 @@ flowchart TD
 
 ---
 
-## ⚡ Quickstart — 3-Terminal Local Setup
+## 🐳 Docker Quickstart — Complete 5-Container Orchestration
 
-Run the entire cluster in 3 separate PowerShell terminals (or execute `.\scripts\start_all.ps1`):
+Launch the full production cluster (PostgreSQL 16, Redis 7, Mock ERP, FastAPI Backend, and Nginx SPA Frontend) with a single command:
+
+```powershell
+# 1. Clone & copy environment configuration
+cp .env.example .env
+
+# 2. Build & launch all 5 containers with healthchecks
+docker compose up --build -d
+
+# 3. View live status of all services
+docker compose ps
+```
+
+| Container | Service | External Port | Healthcheck Target |
+|---|---|---|---|
+| `ledgeragent-postgres` | PostgreSQL 16 Alpine | `5432` | `pg_isready -U ledger -d ledgeragent` |
+| `ledgeragent-redis` | Redis 7 Alpine Checkpointer | `6379` | `redis-cli ping` |
+| `ledgeragent-mock-erp` | Mock Enterprise ERP | `8001` | `curl http://localhost:8001/health` |
+| `ledgeragent-backend` | FastAPI & LangGraph Engine | `8000` | `curl http://localhost:8000/api/v1/health` |
+| `ledgeragent-frontend` | React SPA + Nginx Reverse Proxy | `80` (or `5173`) | `wget http://localhost/health` |
+
+### Testing Persistence with Docker:
+```powershell
+# Simulate container restart — state survives in named volume ledgeragent_postgres_data
+docker compose restart backend
+
+# Stop and restart cluster — named volumes preserve all ledger & audit records
+docker compose down
+docker compose up -d
+```
+
+---
+
+## ⚡ Local Development (3-Terminal Setup)
+
+If developing locally without Docker, run in 3 separate PowerShell terminals:
 
 ### Terminal 1 — Mock ERP API (`:8001`)
 ```powershell

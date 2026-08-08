@@ -1,0 +1,130 @@
+services:
+  # =============================================================================
+  # 1. PostgreSQL 16 Alpine Database
+  # =============================================================================
+  postgres:
+    image: postgres:16-alpine
+    container_name: ledgeragent-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ledger}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ledgerpass2026}
+      POSTGRES_DB: ${POSTGRES_DB:-ledgeragent}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/rds/schema.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ledger} -d ${POSTGRES_DB:-ledgeragent}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ledger-net
+
+  # =============================================================================
+  # 2. Redis 7 Alpine Checkpointer & Cache
+  # =============================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: ledgeragent-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - ledger-net
+
+  # =============================================================================
+  # 3. Mock Enterprise ERP Service
+  # =============================================================================
+  mock_erp:
+    build:
+      context: .
+      dockerfile: mock_erp/Dockerfile
+    container_name: ledgeragent-mock-erp
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-ledger}:${POSTGRES_PASSWORD:-ledgerpass2026}@postgres:5432/${POSTGRES_DB:-ledgeragent}
+      PYTHONUNBUFFERED: "1"
+      PYTHONPATH: "/app"
+    ports:
+      - "8001:8001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - ledger-net
+
+  # =============================================================================
+  # 4. FastAPI & LangGraph Backend Core
+  # =============================================================================
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: ledgeragent-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-ledger}:${POSTGRES_PASSWORD:-ledgerpass2026}@postgres:5432/${POSTGRES_DB:-ledgeragent}
+      REDIS_URL: redis://redis:6379/0
+      MOCK_ERP_URL: http://mock_erp:8001
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-ledgeragent-super-secret-enterprise-key-2026}
+      ALLOWED_ORIGINS: "http://localhost,http://localhost:80,http://localhost:5173,http://127.0.0.1,http://127.0.0.1:5173"
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+      AWS_REGION: ${AWS_REGION:-ap-south-1}
+      ENVIRONMENT: production
+      PYTHONPATH: "/app"
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      mock_erp:
+        condition: service_started
+    networks:
+      - ledger-net
+
+  # =============================================================================
+  # 5. React Frontend (Nginx Alpine Reverse Proxy)
+  # =============================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ledgeragent-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - ledger-net
+
+# =============================================================================
+# Persistent Volumes & Private Bridge Network
+# =============================================================================
+volumes:
+  postgres_data:
+    name: ledgeragent_postgres_data
+  redis_data:
+    name: ledgeragent_redis_data
+
+networks:
+  ledger-net:
+    name: ledgeragent-network
+    driver: bridge
