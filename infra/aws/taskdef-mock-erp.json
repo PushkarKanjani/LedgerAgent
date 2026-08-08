@@ -1,0 +1,45 @@
+{
+    "executionRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-execution-role",
+    "networkMode":  "awsvpc",
+    "cpu":  "256",
+    "requiresCompatibilities":  [
+                                    "FARGATE"
+                                ],
+    "containerDefinitions":  [
+                                 {
+                                     "name":  "mock-erp",
+                                     "logConfiguration":  {
+                                                              "logDriver":  "awslogs",
+                                                              "options":  {
+                                                                              "awslogs-region":  "ap-south-1",
+                                                                              "awslogs-stream-prefix":  "ecs",
+                                                                              "awslogs-group":  "/ecs/ledgeragent-mock-erp"
+                                                                          }
+                                                          },
+                                     "environment":  [
+                                                         {
+                                                             "value":  "1",
+                                                             "name":  "PYTHONUNBUFFERED"
+                                                         }
+                                                     ],
+                                     "essential":  true,
+                                     "secrets":  [
+                                                     {
+                                                         "valueFrom":  "arn:aws:secretsmanager:ap-south-1:441214867393:secret:ledgeragent/db-url-c6eEur",
+                                                         "name":  "DATABASE_URL"
+                                                     }
+                                                 ],
+                                     "image":  "441214867393.dkr.ecr.ap-south-1.amazonaws.com/ledgeragent-mock-erp:latest",
+                                     "portMappings":  [
+                                                          {
+                                                              "containerPort":  8001,
+                                                              "protocol":  "tcp",
+                                                              "hostPort":  8001
+                                                          }
+                                                      ]
+                                 }
+                             ],
+    "family":  "ledgeragent-mock-erp",
+    "taskRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-task-role",
+    "memory":  "512"
+}

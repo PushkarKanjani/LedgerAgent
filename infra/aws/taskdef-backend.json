@@ -1,0 +1,65 @@
+{
+    "executionRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-execution-role",
+    "networkMode":  "awsvpc",
+    "cpu":  "512",
+    "requiresCompatibilities":  [
+                                    "FARGATE"
+                                ],
+    "containerDefinitions":  [
+                                 {
+                                     "name":  "backend",
+                                     "logConfiguration":  {
+                                                              "logDriver":  "awslogs",
+                                                              "options":  {
+                                                                              "awslogs-region":  "ap-south-1",
+                                                                              "awslogs-stream-prefix":  "ecs",
+                                                                              "awslogs-group":  "/ecs/ledgeragent-backend"
+                                                                          }
+                                                          },
+                                     "environment":  [
+                                                         {
+                                                             "value":  "http://mock-erp.ledgeragent.local:8001",
+                                                             "name":  "MOCK_ERP_URL"
+                                                         },
+                                                         {
+                                                             "value":  "production",
+                                                             "name":  "ENVIRONMENT"
+                                                         },
+                                                         {
+                                                             "value":  "ap-south-1",
+                                                             "name":  "AWS_REGION"
+                                                         },
+                                                         {
+                                                             "value":  "ledgeragent-invoices-441214867393",
+                                                             "name":  "S3_BUCKET_NAME"
+                                                         }
+                                                     ],
+                                     "essential":  true,
+                                     "secrets":  [
+                                                     {
+                                                         "valueFrom":  "arn:aws:secretsmanager:ap-south-1:441214867393:secret:ledgeragent/db-url-c6eEur",
+                                                         "name":  "DATABASE_URL"
+                                                     },
+                                                     {
+                                                         "valueFrom":  "arn:aws:secretsmanager:ap-south-1:441214867393:secret:ledgeragent/jwt-secret-2racM9",
+                                                         "name":  "JWT_SECRET_KEY"
+                                                     },
+                                                     {
+                                                         "valueFrom":  "arn:aws:secretsmanager:ap-south-1:441214867393:secret:ledgeragent/groq-api-key-a2raLy",
+                                                         "name":  "GROQ_API_KEY"
+                                                     }
+                                                 ],
+                                     "image":  "441214867393.dkr.ecr.ap-south-1.amazonaws.com/ledgeragent-backend:latest",
+                                     "portMappings":  [
+                                                          {
+                                                              "containerPort":  8000,
+                                                              "protocol":  "tcp",
+                                                              "hostPort":  8000
+                                                          }
+                                                      ]
+                                 }
+                             ],
+    "family":  "ledgeragent-backend",
+    "taskRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-task-role",
+    "memory":  "1024"
+}

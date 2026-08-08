@@ -1,0 +1,14 @@
+{
+    "AlbDnsName":  "",
+    "AlbName":  "ledgeragent-alb",
+    "ListenerArn":  "",
+    "AlbArn":  "",
+    "FrontendTargetGroupArn":  {
+
+                               },
+    "Region":  "ap-south-1",
+    "BackendTargetGroupArn":  {
+
+                              },
+    "EndpointUrl":  "http://"
+}

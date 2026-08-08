@@ -1,0 +1,43 @@
+{
+    "executionRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-execution-role",
+    "networkMode":  "awsvpc",
+    "cpu":  "256",
+    "requiresCompatibilities":  [
+                                    "FARGATE"
+                                ],
+    "containerDefinitions":  [
+                                 {
+                                     "name":  "frontend",
+                                     "logConfiguration":  {
+                                                              "logDriver":  "awslogs",
+                                                              "options":  {
+                                                                              "awslogs-region":  "ap-south-1",
+                                                                              "awslogs-stream-prefix":  "ecs",
+                                                                              "awslogs-group":  "/ecs/ledgeragent-frontend"
+                                                                          }
+                                                          },
+                                     "environment":  [
+                                                         {
+                                                             "value":  "backend.ledgeragent.local",
+                                                             "name":  "BACKEND_HOST"
+                                                         },
+                                                         {
+                                                             "value":  "10.0.0.2",
+                                                             "name":  "DNS_RESOLVER"
+                                                         }
+                                                     ],
+                                     "essential":  true,
+                                     "image":  "441214867393.dkr.ecr.ap-south-1.amazonaws.com/ledgeragent-frontend:latest",
+                                     "portMappings":  [
+                                                          {
+                                                              "containerPort":  80,
+                                                              "protocol":  "tcp",
+                                                              "hostPort":  80
+                                                          }
+                                                      ]
+                                 }
+                             ],
+    "family":  "ledgeragent-frontend",
+    "taskRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-task-role",
+    "memory":  "512"
+}

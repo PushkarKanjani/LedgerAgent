@@ -1,0 +1,12 @@
+{
+    "ExecutionRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-execution-role",
+    "Region":  "ap-south-1",
+    "ClusterName":  "ledgeragent-cluster",
+    "TaskRoleArn":  "arn:aws:iam::441214867393:role/ledgeragent-task-role",
+    "Services":  [
+                     "ledgeragent-mock-erp",
+                     "ledgeragent-backend",
+                     "ledgeragent-frontend"
+                 ],
+    "NamespaceId":  "ns-rsktncfsfuhcxkmr"
+}

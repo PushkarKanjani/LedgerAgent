@@ -106,6 +106,9 @@ services:
       dockerfile: Dockerfile
     container_name: ledgeragent-frontend
     restart: unless-stopped
+    environment:
+      BACKEND_HOST: backend
+      DNS_RESOLVER: 127.0.0.11
     ports:
       - "80:80"
       - "5173:80"
