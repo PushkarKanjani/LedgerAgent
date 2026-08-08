@@ -60,9 +60,9 @@ export const LedgerPage: React.FC = () => {
                 <th className="py-2.5 px-2 font-normal text-right">Posted By</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-hairline font-body">
+            <tbody className="divide-y divide-hairline dark:divide-darkHairline font-body">
               {entries.map((entry, idx) => (
-                <tr key={idx} className="hover:bg-paperAlt transition-colors h-11">
+                <tr key={idx} className="hover:bg-paperAlt dark:hover:bg-darkSurface transition-colors h-11">
                   <td className="py-2 px-2 font-mono text-inkMuted">
                     {entry.transaction_date}
                   </td>

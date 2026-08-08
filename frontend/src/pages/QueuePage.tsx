@@ -88,7 +88,7 @@ export const QueuePage: React.FC = () => {
                 <th className="py-2.5 px-2 font-normal text-right">Action</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-hairline font-body">
+            <tbody className="divide-y divide-hairline dark:divide-darkHairline font-body">
               {filtered.map((item) => {
                 const extracted = item.extracted_data;
                 const match = item.match_result;
@@ -96,7 +96,7 @@ export const QueuePage: React.FC = () => {
                 const poNumber = extracted?.po_number || 'PO-2026-8891';
 
                 return (
-                  <tr key={item.invoice_id} className="hover:bg-paperAlt transition-colors h-11">
+                  <tr key={item.invoice_id} className="hover:bg-paperAlt dark:hover:bg-darkSurface transition-colors h-11">
                     <td className="py-2 px-2 font-mono text-ink font-medium">
                       {item.invoice_id.slice(0, 8)}...
                     </td>

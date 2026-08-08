@@ -57,9 +57,9 @@ export const AuditPage: React.FC = () => {
                 <th className="py-2.5 px-2 font-normal">Details &amp; Metadata</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-hairline">
+            <tbody className="divide-y divide-hairline dark:divide-darkHairline">
               {logs.map((log, idx) => (
-                <tr key={idx} className="hover:bg-paperAlt transition-colors h-10">
+                <tr key={idx} className="hover:bg-paperAlt dark:hover:bg-darkSurface transition-colors h-10">
                   <td className="py-2 px-2 text-inkMuted text-[11px]">
                     {log.timestamp}
                   </td>

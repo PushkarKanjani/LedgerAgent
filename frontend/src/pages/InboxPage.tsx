@@ -110,9 +110,9 @@ export const InboxPage: React.FC = () => {
                   <th className="py-2.5 px-2 font-normal text-right">Date</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-hairline font-body">
+              <tbody className="divide-y divide-hairline dark:divide-darkHairline font-body">
                 {invoices.map((inv) => (
-                  <tr key={inv.invoice_id} className="hover:bg-paperAlt transition-colors h-10">
+                  <tr key={inv.invoice_id} className="hover:bg-paperAlt dark:hover:bg-darkSurface transition-colors h-10">
                     <td className="py-2 px-2 font-mono text-ink font-medium">
                       {inv.invoice_id.slice(0, 8)}
                     </td>
