@@ -1,0 +1,782 @@
+{
+  "INV-2026-001_happy_path.pdf": {
+    "filename": "INV-2026-001_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-001",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-02",
+    "due_date": "2026-08-01",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-002_happy_path.pdf": {
+    "filename": "INV-2026-002_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-002",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-03",
+    "due_date": "2026-08-02",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-003_happy_path.pdf": {
+    "filename": "INV-2026-003_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-003",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-04",
+    "due_date": "2026-08-03",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-004_happy_path.pdf": {
+    "filename": "INV-2026-004_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-004",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-05",
+    "due_date": "2026-08-04",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-005_happy_path.pdf": {
+    "filename": "INV-2026-005_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-005",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-06",
+    "due_date": "2026-08-05",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-006_happy_path.pdf": {
+    "filename": "INV-2026-006_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-006",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-07",
+    "due_date": "2026-08-06",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-007_happy_path.pdf": {
+    "filename": "INV-2026-007_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-007",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-08",
+    "due_date": "2026-08-07",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-008_happy_path.pdf": {
+    "filename": "INV-2026-008_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-008",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-09",
+    "due_date": "2026-08-08",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-009_happy_path.pdf": {
+    "filename": "INV-2026-009_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-009",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-10",
+    "due_date": "2026-08-09",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-010_happy_path.pdf": {
+    "filename": "INV-2026-010_happy_path.pdf",
+    "category": "CATEGORY_A_HAPPY_PATH",
+    "invoice_number": "INV-2026-010",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-11",
+    "due_date": "2026-08-10",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-011_fuzzy_match.pdf": {
+    "filename": "INV-2026-011_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-011",
+    "vendor_name": "Apex Clouud Solutons",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-12",
+    "due_date": "2026-08-11",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-012_fuzzy_match.pdf": {
+    "filename": "INV-2026-012_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-012",
+    "vendor_name": "Apex Cloud Sol.",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-13",
+    "due_date": "2026-08-12",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-013_fuzzy_match.pdf": {
+    "filename": "INV-2026-013_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-013",
+    "vendor_name": "APEX CLOUD SOLUTIONS",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-14",
+    "due_date": "2026-08-13",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-014_fuzzy_match.pdf": {
+    "filename": "INV-2026-014_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-014",
+    "vendor_name": "Apex C1oud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-15",
+    "due_date": "2026-08-14",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-015_fuzzy_match.pdf": {
+    "filename": "INV-2026-015_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-015",
+    "vendor_name": "Apex Cloud Solutns LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-16",
+    "due_date": "2026-08-15",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-016_fuzzy_match.pdf": {
+    "filename": "INV-2026-016_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-016",
+    "vendor_name": "Apex Clud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-17",
+    "due_date": "2026-08-16",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-017_fuzzy_match.pdf": {
+    "filename": "INV-2026-017_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-017",
+    "vendor_name": "Apex Cloud Solutions, LLC.",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-18",
+    "due_date": "2026-08-17",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-018_fuzzy_match.pdf": {
+    "filename": "INV-2026-018_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-018",
+    "vendor_name": "APEX CLOUD SOLUTIONS LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-19",
+    "due_date": "2026-08-18",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-019_fuzzy_match.pdf": {
+    "filename": "INV-2026-019_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-019",
+    "vendor_name": "Apex Cloud Solutions Inc",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-20",
+    "due_date": "2026-08-19",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-020_fuzzy_match.pdf": {
+    "filename": "INV-2026-020_fuzzy_match.pdf",
+    "category": "CATEGORY_B_FUZZY_MATCH",
+    "invoice_number": "INV-2026-020",
+    "vendor_name": "Apex Cloud Solution",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-21",
+    "due_date": "2026-08-20",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Hours)",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "FULL_MATCH_VIA_FUZZY_LOOKUP",
+    "expected_hitl": false,
+    "expected_gl_posted": true
+  },
+  "INV-2026-021_price_variance_hitl.pdf": {
+    "filename": "INV-2026-021_price_variance_hitl.pdf",
+    "category": "CATEGORY_C_PRICE_VARIANCE",
+    "invoice_number": "INV-2026-021",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-22",
+    "due_date": "2026-08-21",
+    "currency": "USD",
+    "subtotal": 5200.0,
+    "tax_amount": 416.0,
+    "total_amount": 5616.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Overbilled Rate)",
+        "quantity": 100.0,
+        "unit_price": 52.0,
+        "line_total": 5200.0
+      }
+    ],
+    "expected_outcome": "PRICE_MISMATCH",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-022_price_variance_hitl.pdf": {
+    "filename": "INV-2026-022_price_variance_hitl.pdf",
+    "category": "CATEGORY_C_PRICE_VARIANCE",
+    "invoice_number": "INV-2026-022",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-23",
+    "due_date": "2026-08-22",
+    "currency": "USD",
+    "subtotal": 5500.0,
+    "tax_amount": 440.0,
+    "total_amount": 5940.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Overbilled Rate)",
+        "quantity": 100.0,
+        "unit_price": 55.0,
+        "line_total": 5500.0
+      }
+    ],
+    "expected_outcome": "PRICE_MISMATCH",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-023_price_variance_hitl.pdf": {
+    "filename": "INV-2026-023_price_variance_hitl.pdf",
+    "category": "CATEGORY_C_PRICE_VARIANCE",
+    "invoice_number": "INV-2026-023",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-24",
+    "due_date": "2026-08-23",
+    "currency": "USD",
+    "subtotal": 5800.0,
+    "tax_amount": 464.0,
+    "total_amount": 6264.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Overbilled Rate)",
+        "quantity": 100.0,
+        "unit_price": 58.0,
+        "line_total": 5800.0
+      }
+    ],
+    "expected_outcome": "PRICE_MISMATCH",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-024_price_variance_hitl.pdf": {
+    "filename": "INV-2026-024_price_variance_hitl.pdf",
+    "category": "CATEGORY_C_PRICE_VARIANCE",
+    "invoice_number": "INV-2026-024",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-25",
+    "due_date": "2026-08-24",
+    "currency": "USD",
+    "subtotal": 6100.0,
+    "tax_amount": 488.0,
+    "total_amount": 6588.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Overbilled Rate)",
+        "quantity": 100.0,
+        "unit_price": 61.0,
+        "line_total": 6100.0
+      }
+    ],
+    "expected_outcome": "PRICE_MISMATCH",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-025_price_variance_hitl.pdf": {
+    "filename": "INV-2026-025_price_variance_hitl.pdf",
+    "category": "CATEGORY_C_PRICE_VARIANCE",
+    "invoice_number": "INV-2026-025",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": "PO-2026-8891",
+    "invoice_date": "2026-07-26",
+    "due_date": "2026-08-25",
+    "currency": "USD",
+    "subtotal": 6400.0,
+    "tax_amount": 512.0,
+    "total_amount": 6912.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker (Overbilled Rate)",
+        "quantity": 100.0,
+        "unit_price": 64.0,
+        "line_total": 6400.0
+      }
+    ],
+    "expected_outcome": "PRICE_MISMATCH",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-026_missing_po_hitl.pdf": {
+    "filename": "INV-2026-026_missing_po_hitl.pdf",
+    "category": "CATEGORY_C_MISSING_PO",
+    "invoice_number": "INV-2026-026",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": null,
+    "invoice_date": "2026-07-27",
+    "due_date": "2026-08-26",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "MISSING_PO",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-027_missing_po_hitl.pdf": {
+    "filename": "INV-2026-027_missing_po_hitl.pdf",
+    "category": "CATEGORY_C_MISSING_PO",
+    "invoice_number": "INV-2026-027",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": null,
+    "invoice_date": "2026-07-28",
+    "due_date": "2026-08-27",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "MISSING_PO",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-028_missing_po_hitl.pdf": {
+    "filename": "INV-2026-028_missing_po_hitl.pdf",
+    "category": "CATEGORY_C_MISSING_PO",
+    "invoice_number": "INV-2026-028",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": null,
+    "invoice_date": "2026-07-29",
+    "due_date": "2026-08-28",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "MISSING_PO",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-029_missing_po_hitl.pdf": {
+    "filename": "INV-2026-029_missing_po_hitl.pdf",
+    "category": "CATEGORY_C_MISSING_PO",
+    "invoice_number": "INV-2026-029",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": null,
+    "invoice_date": "2026-07-30",
+    "due_date": "2026-08-29",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "MISSING_PO",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  },
+  "INV-2026-030_missing_po_hitl.pdf": {
+    "filename": "INV-2026-030_missing_po_hitl.pdf",
+    "category": "CATEGORY_C_MISSING_PO",
+    "invoice_number": "INV-2026-030",
+    "vendor_name": "Apex Cloud Solutions LLC",
+    "vendor_tax_id": "XX-XXX7733",
+    "po_number": null,
+    "invoice_date": "2026-07-31",
+    "due_date": "2026-08-30",
+    "currency": "USD",
+    "subtotal": 4500.0,
+    "tax_amount": 360.0,
+    "total_amount": 4860.0,
+    "line_items": [
+      {
+        "item_code": "SRV-CLOUD-01",
+        "description": "Cloud Compute Task Worker",
+        "quantity": 100.0,
+        "unit_price": 45.0,
+        "line_total": 4500.0
+      }
+    ],
+    "expected_outcome": "MISSING_PO",
+    "expected_hitl": true,
+    "expected_gl_posted": false
+  }
+}
