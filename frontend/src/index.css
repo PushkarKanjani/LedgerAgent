@@ -1,0 +1,78 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/ibm-plex-mono/600.css';
+@import '@fontsource/instrument-serif/400-italic.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter Variable', sans-serif;
+    color: #111111;
+    background-color: #FFFFFF;
+    transition: background-color 200ms ease, color 200ms ease;
+  }
+
+  html.dark {
+    color: #E5E5E5;
+    background-color: #0F0F0F;
+  }
+  
+  /* Selection styling */
+  ::selection {
+    background-color: #002FA7;
+    color: #FFFFFF;
+  }
+
+  html.dark ::selection {
+    background-color: #2E5BFF;
+    color: #FFFFFF;
+  }
+
+  /* Monospace numerals alignment */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Hairline scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D0D0D0;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #111111;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}
+
+/* Lenis smooth scroll */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
