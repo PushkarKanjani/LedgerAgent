@@ -44,11 +44,16 @@ pipeline {
 
         stage('4. Docker Multi-Stage Builds') {
             steps {
-                echo "📦 [Docker] Building 3 production images (Build #${BUILD_NUMBER})..."
+                echo "📦 [Docker] Building 3 production images with real-time logging (Build #${BUILD_NUMBER})..."
                 sh """
-                    docker build -t ${ECR_REGISTRY}/ledgeragent-backend:${BUILD_NUMBER} -t ${ECR_REGISTRY}/ledgeragent-backend:latest -f backend/Dockerfile .
-                    docker build -t ${ECR_REGISTRY}/ledgeragent-mock-erp:${BUILD_NUMBER} -t ${ECR_REGISTRY}/ledgeragent-mock-erp:latest -f mock_erp/Dockerfile .
-                    docker build -t ${ECR_REGISTRY}/ledgeragent-frontend:${BUILD_NUMBER} -t ${ECR_REGISTRY}/ledgeragent-frontend:latest -f frontend/Dockerfile frontend
+                    echo "==> [1/3] Building Backend Image..."
+                    docker build --progress=plain -t ${ECR_REGISTRY}/ledgeragent-backend:${BUILD_NUMBER} -t ${ECR_REGISTRY}/ledgeragent-backend:latest -f backend/Dockerfile .
+                    
+                    echo "==> [2/3] Building Mock ERP Image..."
+                    docker build --progress=plain -t ${ECR_REGISTRY}/ledgeragent-mock-erp:${BUILD_NUMBER} -t ${ECR_REGISTRY}/ledgeragent-mock-erp:latest -f mock_erp/Dockerfile .
+                    
+                    echo "==> [3/3] Building Frontend Image (Vite ESBuild Engine)..."
+                    docker build --progress=plain -t ${ECR_REGISTRY}/ledgeragent-frontend:${BUILD_NUMBER} -t ${ECR_REGISTRY}/ledgeragent-frontend:latest -f frontend/Dockerfile frontend
                 """
             }
         }

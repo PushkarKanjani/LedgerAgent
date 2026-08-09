@@ -1,6 +1,6 @@
 # =============================================================================
-# LedgerAgent Frontend — Multi-Stage Production Dockerfile
-# Stage 1: Build static assets with Node.js & Vite
+# LedgerAgent Frontend — Multi-Stage Lightweight Production Dockerfile
+# Stage 1: Build static assets with Node.js & Vite (Optimized for low-RAM VMs)
 # Stage 2: Serve high-performance bundle with Nginx Alpine (envsubst template)
 # =============================================================================
 
@@ -9,8 +9,10 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+ENV NODE_OPTIONS="--max-old-space-size=512"
+
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --prefer-offline --no-audit
 
 COPY . .
 RUN npm run build
