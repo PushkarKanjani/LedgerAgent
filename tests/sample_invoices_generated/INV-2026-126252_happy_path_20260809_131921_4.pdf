@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1922 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(JAIPUR OPTICS & FIBERS - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Sitapura Industrial Area, Jaipur, RJ 302001 | GSTIN: GSTIN08AABCJ3344F1Z8) Tj
+0 -14 Td
+(Email: billing@jaipuroptics.in | Unique Nonce: 4f0c95aa-1f21-4e) Tj
+0 -22 Td
+(Invoice Number: INV-2026-126252      Purchase Order: PO-2026-373819) Tj
+0 -14 Td
+(Invoice Date: 2026-03-11           Due Date: 2026-04-10 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Hot-Swap High-CFM Cooling Fan Module             1       $840.53       $840.53) Tj
+0 -16 Td
+(2. AMD EPYC 9354 32-Core Server CPU                 4       $1,799.83     $7,199.32) Tj
+0 -16 Td
+(3. NVMe Enterprise SSD Drive 3.84TB                 6       $549.31       $3,295.86) Tj
+0 -16 Td
+(4. SAS 12Gbps Host Bus Adapter (HBA)                16      $1,682.17     $26,914.72) Tj
+0 -16 Td
+(5. Server Rail Kit Sliding Mount                    17      $130.76       $2,222.92) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $40,473.35) Tj
+0 -14 Td
+(GST (18%):                                                          $7,285.20) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $47,758.55) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Jaipur Optics & Fibers | Nonce: 4f0c95aa-1f21-4ef5-a8c5-f85786d14605) Tj
+0 -12 Td
+(LedgerAgent Test Category: HAPPY_PATH | Target Match: PO-2026-373819) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002222 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2302
+%%EOF

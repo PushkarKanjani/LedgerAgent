@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1922 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(INDORE MICRO DEVICES - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Vijay Nagar Tech Square, Indore, MP 452010 | GSTIN: GSTIN23AABCI7788P1Z6) Tj
+0 -14 Td
+(Email: accounts@indoremicro.in | Unique Nonce: 6214615f-04bd-4b) Tj
+0 -22 Td
+(Invoice Number: INV-2026-728658      Purchase Order: PO-2026-857225) Tj
+0 -14 Td
+(Invoice Date: 2026-03-23           Due Date: 2026-04-22 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Rackmount Cable Strain Relief Bar 1U             20      $595.86       $11,917.20) Tj
+0 -16 Td
+(2. Server Chassis Front Bezel with Keylock          11      $930.43       $10,234.73) Tj
+0 -16 Td
+(3. Rackmount Keyboard & Touchpad Drawer 1U          9       $618.59       $5,567.31) Tj
+0 -16 Td
+(4. Cable Management Horizontal Duct 2U              12      $1,498.40     $17,980.80) Tj
+0 -16 Td
+(5. Intel Xeon Gold 6430 Processor                   12      $1,537.00     $18,444.00) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $64,144.04) Tj
+0 -14 Td
+(GST (12%):                                                          $7,697.28) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $71,841.32) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Indore Micro Devices | Nonce: 6214615f-04bd-4b80-8736-d496977e6f25) Tj
+0 -12 Td
+(LedgerAgent Test Category: HAPPY_PATH | Target Match: PO-2026-857225) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002222 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2302
+%%EOF

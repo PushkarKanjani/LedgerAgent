@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1825 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(NOIDA SILICON TECHNOLOGIES - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Sector 62 Tech Zone, Noida, UP 201301 | GSTIN: GSTIN09AABCN4433E1Z4) Tj
+0 -14 Td
+(Email: sales@noidasilicon.in | Unique Nonce: 8c1b8f4b-eb11-4e) Tj
+0 -22 Td
+(Invoice Number: INV-2026-896635      Purchase Order: PO-2026-603388) Tj
+0 -14 Td
+(Invoice Date: 2026-05-11           Due Date: 2026-06-10 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Rackmount Keyboard & Touchpad Drawer 1U          10      $130.25       $1,302.50) Tj
+0 -16 Td
+(2. Power Distribution Unit (PDU) Switched           3       $1,353.99     $4,061.97) Tj
+0 -16 Td
+(3. Server Power Cable C13-to-C14 2m (5-Pack)        19      $325.52       $6,184.88) Tj
+0 -16 Td
+(4. Network Loopback Tester Gigabit                  4       $514.05       $2,056.20) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $13,605.55) Tj
+0 -14 Td
+(GST (28%):                                                          $3,809.55) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $17,415.10) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Noida Silicon Technologies | Nonce: 8c1b8f4b-eb11-4e4c-b159-67b5b2c36528) Tj
+0 -12 Td
+(LedgerAgent Test Category: HAPPY_PATH | Target Match: PO-2026-603388) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002125 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2205
+%%EOF

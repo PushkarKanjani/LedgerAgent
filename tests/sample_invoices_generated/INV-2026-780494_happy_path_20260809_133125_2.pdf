@@ -1,0 +1,69 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1538 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(APEX CLOUD SOLUTIONS LLC - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: 100 Innovation Way, Suite 400, Mumbai / Austin | Tax ID: GSTIN27AAPEX9988K1Z0) Tj
+0 -14 Td
+(Email: billing@apexcloud.com | Category: HAPPY_PATH | Nonce: 0635cd1a-0f28-49) Tj
+0 -22 Td
+(Invoice Number: INV-2026-780494      Purchase Order: PO-2026-8891) Tj
+0 -14 Td
+(Invoice Date: 2026-07-22           Due Date: 2026-08-22 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Inc. [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Cloud Compute Task Worker (Hours)                100.0   $45.00        $4,500.00) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $4,500.00) Tj
+0 -14 Td
+(Tax (8%):                                                          $360.00) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $4,860.00) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Apex Cloud Solutions LLC | Baseline PO: $4,860.00) Tj
+0 -12 Td
+(LedgerAgent Invariant Guardrail Check: Auto-post to GL (Straight-Through Processing)) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000001838 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1918
+%%EOF

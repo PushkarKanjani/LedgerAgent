@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1931 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(KOCHI MARINE & SERVER TECH - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Infopark Kakkanad Phase 1, Kochi, KL 682030 | GSTIN: GSTIN32AABCK4455R1Z3) Tj
+0 -14 Td
+(Email: finance@kochimarine.in | Unique Nonce: 79660672-f395-45) Tj
+0 -22 Td
+(Invoice Number: INV-2026-689331      Purchase Order: PO-2026-586892) Tj
+0 -14 Td
+(Invoice Date: 2026-04-20           Due Date: 2026-05-20 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Industrial Surge Protector 8-Outlet              3       $273.10       $819.30) Tj
+0 -16 Td
+(2. External SAS Tape Drive LTO-8                    19      $1,538.16     $29,225.04) Tj
+0 -16 Td
+(3. Workstation Graphics Accelerator 24GB            18      $1,249.52     $22,491.36) Tj
+0 -16 Td
+(4. ESD Anti-Static Grounding Wristband Kit          19      $1,233.54     $23,437.26) Tj
+0 -16 Td
+(5. Network Loopback Tester Gigabit                  11      $280.33       $3,083.63) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $79,056.59) Tj
+0 -14 Td
+(GST (12%):                                                          $9,486.79) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $88,543.38) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Kochi Marine & Server Tech | Nonce: 79660672-f395-45c5-82f3-73ffd94b7058) Tj
+0 -12 Td
+(LedgerAgent Test Category: HAPPY_PATH | Target Match: PO-2026-586892) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002231 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2311
+%%EOF

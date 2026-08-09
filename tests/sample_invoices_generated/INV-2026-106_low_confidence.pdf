@@ -1,0 +1,83 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1380 >>
+stream
+q
+0.9998 0.0209 -0.0209 0.9998 10 -5 cm
+0.25 0.25 0.25 rg
+BT
+/F2 18 Tf
+40 760 Td
+(CHENNAI INDUSTRIAL - COMMERCIAL INVOICE [FAX TRANSMISSION]) Tj
+/F1 8.5 Tf
+0 -22 Td
+(Address: 55 Guindy Industrial Estate, Chennai, Tamil Nadu 600032) Tj
+0 -14 Td
+(Tax Reg: GSTIN33AABCC6789Q1Z1 | Email: billing@chennaiindustrial.com | Tel: +91 44 2250 8800) Tj
+0 -24 Td
+(Invoice Number: INV-2026-106              PO Number: PO-2026-206) Tj
+0 -14 Td
+(Date of Billing: 2026-02-19               Due Date: 2026-03-21 (Net 30)) Tj
+0 -14 Td
+(Customer: LedgerAgent Technologies Pvt Ltd (GSTIN27AABCL9999Z1ZX)) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(LINE ITEM DESCRIPTION                              QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Server Rack Enclosure 42U                        2       $1,200.00         $2,400.00) Tj
+0 -16 Td
+(2. Managed Network Switch 48-Port PoE+              2       $850.00           $1,700.00) Tj
+0 -16 Td
+(3. Online UPS Battery Backup 3000VA                 3       $650.00           $1,950.00) Tj
+0 -16 Td
+(4. High-Speed SFP+ Cable Assembly 10G               4       $180.00           $720.00) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal Amount:                                                    $6,770.00) Tj
+0 -14 Td
+(GST @ 18%:                                                          $1,218.60) Tj
+/F2 11 Tf
+0 -18 Td
+(NET PAYABLE TOTAL (USD):                                           $7,988.60) Tj
+/F1 7.5 Tf
+0 -32 Td
+(Wire Remittance: Indian Overseas Bank | Account: Chennai Industrial | A/C #: 019902000011 | IFSC: IOBA0000199) Tj
+0 -12 Td
+(LedgerAgent Verification: Category C (Skewed/Noisy Scan) | Expected Confidence: < 0.85 -> HITL) Tj
+ET
+Q
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000255 00000 n 
+0000001690 00000 n 
+0000001763 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1840
+%%EOF

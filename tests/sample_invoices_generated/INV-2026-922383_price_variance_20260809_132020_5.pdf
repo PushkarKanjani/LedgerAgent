@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1832 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(CHENNAI INDUSTRIAL - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: 55 Guindy Industrial Estate, Chennai, TN 600032 | GSTIN: GSTIN33AABCC6789Q1Z1) Tj
+0 -14 Td
+(Email: billing@chennaiindustrial.com | Unique Nonce: b4b553bd-679c-44) Tj
+0 -22 Td
+(Invoice Number: INV-2026-922383      Purchase Order: PO-2026-673536) Tj
+0 -14 Td
+(Invoice Date: 2026-07-16           Due Date: 2026-08-15 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Environmental Monitoring Sensor Probe            7       $1,354.10     $9,478.70) Tj
+0 -16 Td
+(2. KVM over IP Console Switch 16-Port               5       $1,754.45     $8,772.25) Tj
+0 -16 Td
+(3. Server Chassis Front Bezel with Keylock          2       $748.87       $1,497.74) Tj
+0 -16 Td
+(4. Cat7 Ethernet Bulk Reel 305m                     11      $1,708.12     $18,789.32) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $38,538.01) Tj
+0 -14 Td
+(GST (12%):                                                          $4,624.56) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $43,162.57) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Chennai Industrial | Nonce: b4b553bd-679c-4486-b635-c03911072705) Tj
+0 -12 Td
+(LedgerAgent Test Category: PRICE_VARIANCE | Target Match: PO-2026-673536) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002132 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2212
+%%EOF

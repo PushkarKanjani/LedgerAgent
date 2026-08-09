@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1930 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(NOIDA SILICON TECHNOLOGIES - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Sector 62 Tech Zone, Noida, UP 201301 | GSTIN: GSTIN09AABCN4433E1Z4) Tj
+0 -14 Td
+(Email: sales@noidasilicon.in | Unique Nonce: 97402c02-ae32-47) Tj
+0 -22 Td
+(Invoice Number: INV-2026-311531      Purchase Order: PO-2026-255791) Tj
+0 -14 Td
+(Invoice Date: 2026-01-02           Due Date: 2026-02-01 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Power Distribution Unit (PDU) Switched           20      $236.30       $4,726.00) Tj
+0 -16 Td
+(2. AMD EPYC 9354 32-Core Server CPU                 9       $259.55       $2,335.95) Tj
+0 -16 Td
+(3. Velcro Cable Tie Roll 25m Heavy Duty             15      $669.89       $10,048.35) Tj
+0 -16 Td
+(4. Blanking Panel 1U Toolless (10-Pack)             18      $843.56       $15,184.08) Tj
+0 -16 Td
+(5. Serial Console Adapter USB-to-RJ45               15      $1,248.09     $18,721.35) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $51,015.73) Tj
+0 -14 Td
+(GST (18%):                                                          $9,182.83) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $60,198.56) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Noida Silicon Technologies | Nonce: 97402c02-ae32-4764-a8d3-1bd3db4cd66f) Tj
+0 -12 Td
+(LedgerAgent Test Category: PRICE_VARIANCE | Target Match: PO-2026-255791) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002230 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2310
+%%EOF

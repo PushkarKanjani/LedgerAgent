@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1939 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(CHANDIGARH NETWORK SYSTEMS - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: IT Park, Sector 13, Chandigarh, CH 160022 | GSTIN: GSTIN04AABCC9900H1Z2) Tj
+0 -14 Td
+(Email: support@chandigarhnetworks.in | Unique Nonce: 025f7fc8-3dc9-49) Tj
+0 -22 Td
+(Invoice Number: INV-2026-559167      Purchase Order: PO-2026-428736) Tj
+0 -14 Td
+(Invoice Date: 2026-02-17           Due Date: 2026-03-19 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Fiber Optic Cleaning Pen 2.5mm                   13      $1,548.38     $20,128.94) Tj
+0 -16 Td
+(2. Server Rail Kit Sliding Mount                    11      $1,244.11     $13,685.21) Tj
+0 -16 Td
+(3. Automatic Transfer Switch (ATS) 16A              13      $661.09       $8,594.17) Tj
+0 -16 Td
+(4. ESD Anti-Static Grounding Wristband Kit          13      $1,503.41     $19,544.33) Tj
+0 -16 Td
+(5. DDR5 ECC RAM Module 64GB 4800MHz                 4       $799.60       $3,198.40) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $65,151.05) Tj
+0 -14 Td
+(GST (28%):                                                          $18,242.29) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $83,393.34) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Chandigarh Network Systems | Nonce: 025f7fc8-3dc9-4981-8276-27292e308021) Tj
+0 -12 Td
+(LedgerAgent Test Category: HAPPY_PATH | Target Match: PO-2026-428736) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002239 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2319
+%%EOF

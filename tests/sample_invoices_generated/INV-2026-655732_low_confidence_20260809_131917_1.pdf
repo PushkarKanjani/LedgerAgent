@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1728 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(NOIDA SILICON TECHNOLOGIES - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Sector 62 Tech Zone, Noida, UP 201301 | GSTIN: GSTIN09AABCN4433E1Z4) Tj
+0 -14 Td
+(Email: sales@noidasilicon.in | Unique Nonce: 84398238-af86-4d) Tj
+0 -22 Td
+(Invoice Number: INV-2026-655732      Purchase Order: PO-2026-835606) Tj
+0 -14 Td
+(Invoice Date: 2026-04-21           Due Date: 2026-05-21 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Blade Server Expansion Bay Module                3       $1,777.25     $5,331.75) Tj
+0 -16 Td
+(2. Fiber Optic QSFP28 Transceiver 100G-SR4          4       $1,176.20     $4,704.80) Tj
+0 -16 Td
+(3. RJ45 Modular Crimping & Termination Kit          19      $231.31       $4,394.89) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $14,431.44) Tj
+0 -14 Td
+(GST (5%):                                                          $721.57) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $15,153.01) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Noida Silicon Technologies | Nonce: 84398238-af86-4d5f-a3a1-c65649547caf) Tj
+0 -12 Td
+(LedgerAgent Test Category: LOW_CONFIDENCE | Target Match: PO-2026-835606) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002028 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2108
+%%EOF

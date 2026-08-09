@@ -1,0 +1,79 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1340 >>
+stream
+BT
+/F2 20 Tf
+40 780 Td
+(PUNE MANUFACTURING - TAX INVOICE) Tj
+/F1 9 Tf
+0 -22 Td
+(Address: 90 Hinjawadi Infotech Park Phase 2, Pune, Maharashtra 411057) Tj
+0 -14 Td
+(GSTIN / Tax ID: GSTIN27AABCP4567S1Z3 | Email: ap@punemanufacturing.in | Phone: +91 20 6675 9900) Tj
+0 -24 Td
+(Invoice Number: INV-2026-108              Purchase Order: PO-2026-208) Tj
+0 -14 Td
+(Invoice Date: 2026-02-25                  Payment Due: 2026-03-27 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd (GSTIN27AABCL9999Z1ZX) | Currency: USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Hot-Swap High-CFM Cooling Fan Module             4       $164.80           $659.20) Tj
+0 -16 Td
+(2. Workstation Graphics Accelerator 24GB            2       $1,350.00         $2,700.00) Tj
+0 -16 Td
+(3. Server Rack Enclosure 42U                        2       $1,200.00         $2,400.00) Tj
+0 -16 Td
+(4. Managed Network Switch 48-Port PoE+              2       $850.00           $1,700.00) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $7,459.20) Tj
+0 -14 Td
+(GST (18%):                                                          $1,342.66) Tj
+/F2 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $8,801.86) Tj
+/F1 8 Tf
+0 -32 Td
+(Remittance: Bank of Maharashtra | Account: Pune Manufacturing | A/C #: 600122334455 | IFSC: MAHB0000123) Tj
+0 -12 Td
+(LedgerAgent Verification: Category B (Price Variance) | PO Target: $8,540.00 | Variance: +3.0%) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000255 00000 n 
+0000001650 00000 n 
+0000001725 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1805
+%%EOF

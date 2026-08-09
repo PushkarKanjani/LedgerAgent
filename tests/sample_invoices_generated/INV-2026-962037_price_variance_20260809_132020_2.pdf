@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1745 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(AHMEDABAD POWER & SERVER - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: SG Highway Commercial Complex, Ahmedabad, GJ 380015 | GSTIN: GSTIN24AABCA5566T1Z9) Tj
+0 -14 Td
+(Email: orders@ahmedabadpower.in | Unique Nonce: b0f65ef5-8803-49) Tj
+0 -22 Td
+(Invoice Number: INV-2026-962037      Purchase Order: PO-2026-144356) Tj
+0 -14 Td
+(Invoice Date: 2026-05-06           Due Date: 2026-06-05 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Workstation Graphics Accelerator 24GB            16      $450.00       $7,200.00) Tj
+0 -16 Td
+(2. NVMe Enterprise SSD Drive 3.84TB                 10      $1,014.61     $10,146.10) Tj
+0 -16 Td
+(3. Redundant Power Supply 850W Platinum             15      $1,197.89     $17,968.35) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $35,314.45) Tj
+0 -14 Td
+(GST (5%):                                                          $1,765.72) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $37,080.17) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Ahmedabad Power & Server | Nonce: b0f65ef5-8803-49f5-a946-77a882632f96) Tj
+0 -12 Td
+(LedgerAgent Test Category: PRICE_VARIANCE | Target Match: PO-2026-144356) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002045 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2125
+%%EOF

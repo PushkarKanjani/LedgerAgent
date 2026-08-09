@@ -1,0 +1,71 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1628 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(HYDERABAD SYSTEMS - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: 34 HITEC City Boulevard, Hyderabad, TS 500081 | GSTIN: GSTIN36AABCH8901T1Z6) Tj
+0 -14 Td
+(Email: accounts@hyderabadsystems.in | Unique Nonce: e33c0fc9-b4eb-47) Tj
+0 -22 Td
+(Invoice Number: INV-2026-773485      Purchase Order: PO-2026-832321) Tj
+0 -14 Td
+(Invoice Date: 2026-02-16           Due Date: 2026-03-18 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. DDR5 ECC RAM Module 64GB 4800MHz                 9       $250.10       $2,250.90) Tj
+0 -16 Td
+(2. Velcro Cable Tie Roll 25m Heavy Duty             7       $401.15       $2,808.05) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $5,058.95) Tj
+0 -14 Td
+(GST (28%):                                                          $1,416.51) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $6,475.46) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Hyderabad Systems | Nonce: e33c0fc9-b4eb-4799-8130-18f2ecc74947) Tj
+0 -12 Td
+(LedgerAgent Test Category: PRICE_VARIANCE | Target Match: PO-2026-832321) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000001928 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2008
+%%EOF

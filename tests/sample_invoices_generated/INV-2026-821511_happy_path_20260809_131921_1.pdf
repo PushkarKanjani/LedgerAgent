@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1924 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(INDORE MICRO DEVICES - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Vijay Nagar Tech Square, Indore, MP 452010 | GSTIN: GSTIN23AABCI7788P1Z6) Tj
+0 -14 Td
+(Email: accounts@indoremicro.in | Unique Nonce: ff4cbcda-3fab-45) Tj
+0 -22 Td
+(Invoice Number: INV-2026-821511      Purchase Order: PO-2026-136569) Tj
+0 -14 Td
+(Invoice Date: 2026-05-11           Due Date: 2026-06-10 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. ESD Anti-Static Grounding Wristband Kit          19      $1,629.98     $30,969.62) Tj
+0 -16 Td
+(2. Online UPS Battery Backup 3000VA                 5       $1,751.95     $8,759.75) Tj
+0 -16 Td
+(3. SATA Enterprise Hard Drive 18TB 7200RPM          19      $1,064.32     $20,222.08) Tj
+0 -16 Td
+(4. Automatic Transfer Switch (ATS) 16A              14      $1,619.23     $22,669.22) Tj
+0 -16 Td
+(5. Server Motherboard CMOS Battery CR2032           19      $831.45       $15,797.55) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $98,418.22) Tj
+0 -14 Td
+(GST (28%):                                                          $27,557.10) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $125,975.32) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Indore Micro Devices | Nonce: ff4cbcda-3fab-4538-86d5-42267e870cef) Tj
+0 -12 Td
+(LedgerAgent Test Category: HAPPY_PATH | Target Match: PO-2026-136569) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002224 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2304
+%%EOF

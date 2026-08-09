@@ -1,0 +1,71 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1599 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(ACME CORP - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: 42 Silicon Arcade, BKC, Mumbai, MH 400051 | GSTIN: GSTIN27AABCA1234F1Z5) Tj
+0 -14 Td
+(Email: billing@acmecorp.in | Unique Nonce: 365c8c86-a109-4c) Tj
+0 -22 Td
+(Invoice Number: INV-2026-892459      Purchase Order: PO-2026-496439) Tj
+0 -14 Td
+(Invoice Date: 2026-07-12           Due Date: 2026-08-11 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Online UPS Battery Backup 3000VA                 7       $564.61       $3,952.27) Tj
+0 -16 Td
+(2. NVMe Enterprise SSD Drive 3.84TB                 6       $1,780.06     $10,680.36) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $14,632.63) Tj
+0 -14 Td
+(GST (5%):                                                          $731.63) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $15,364.26) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Acme Corp | Nonce: 365c8c86-a109-4c13-b8ca-7c38dd90c862) Tj
+0 -12 Td
+(LedgerAgent Test Category: LOW_CONFIDENCE | Target Match: PO-2026-496439) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000001899 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1979
+%%EOF

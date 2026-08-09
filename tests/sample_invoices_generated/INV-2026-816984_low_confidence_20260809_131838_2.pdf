@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1721 >>
+stream
+BT
+/F1 18 Tf
+40 760 Td
+(INDORE MICRO DEVICES - TAX INVOICE) Tj
+/F1 9 Tf
+0 -20 Td
+(Address: Vijay Nagar Tech Square, Indore, MP 452010 | GSTIN: GSTIN23AABCI7788P1Z6) Tj
+0 -14 Td
+(Email: accounts@indoremicro.in | Unique Nonce: 3dc97ff0-963d-42) Tj
+0 -22 Td
+(Invoice Number: INV-2026-816984      Purchase Order: PO-2026-505676) Tj
+0 -14 Td
+(Invoice Date: 2026-07-02           Due Date: 2026-08-01 (Net 30)) Tj
+0 -14 Td
+(Bill To: LedgerAgent Technologies Pvt Ltd [GSTIN27AABCL9999Z1ZX] | USD [$]) Tj
+0 -24 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -14 Td
+(ITEM DESCRIPTION                                   QTY     UNIT PRICE        TOTAL AMOUNT) Tj
+0 -12 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(1. Patch Panel 24-Port Cat6A 1U                     2       $339.91       $679.82) Tj
+0 -16 Td
+(2. SAS 12Gbps Host Bus Adapter (HBA)                6       $1,423.76     $8,542.56) Tj
+0 -16 Td
+(3. Environmental Monitoring Sensor Probe            3       $84.78        $254.34) Tj
+0 -18 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+(Subtotal:                                                           $9,476.72) Tj
+0 -14 Td
+(GST (18%):                                                          $1,705.81) Tj
+/F1 12 Tf
+0 -18 Td
+(TOTAL DUE (USD):                                                   $11,182.53) Tj
+/F1 8 Tf
+0 -30 Td
+(Remittance: Bank Wire | Account: Indore Micro Devices | Nonce: 3dc97ff0-963d-42a4-8664-16fb5b82bc6f) Tj
+0 -12 Td
+(LedgerAgent Test Category: LOW_CONFIDENCE | Target Match: PO-2026-505676) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000240 00000 n 
+00000002021 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2101
+%%EOF
