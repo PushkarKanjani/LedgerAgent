@@ -11,6 +11,7 @@
 flowchart TD
     subgraph PUBLIC_INTERNET["PUBLIC INTERNET (0.0.0.0/0)"]
         CLIENT["🌐 React Frontend / Web Browser"]
+        GITHUB["🐙 GitHub Repository (main branch)"]
     end
 
     subgraph AWS_VPC["AWS VPC (10.0.0.0/16) — ap-south-1"]
@@ -18,6 +19,7 @@ flowchart TD
         
         subgraph PUBLIC_SUBNETS["Public Subnets (Dual-AZ Ingress: 10.0.1.0/24 & 10.0.2.0/24)"]
             ALB["⚖️ Application Load Balancer (ledgeragent-alb)<br/>Path Routing: / -> Frontend | /api/v1/* -> Backend"]
+            JENKINS["🛠️ Jenkins CI/CD Controller<br/>(EC2 t2.micro | Docker-in-Docker)"]
             
             subgraph ECS_CLUSTER["AWS ECS Fargate Cluster (ledgeragent-cluster)"]
                 FRONTEND["⚛️ Frontend Service (:80)<br/>(256 CPU / 512 MB)"]
@@ -44,6 +46,10 @@ flowchart TD
         GROQ["🤖 Groq Cloud API (Llama 3.3 70B Structured Output)"]
     end
 
+    GITHUB -->|Poll SCM / Webhook| JENKINS
+    JENKINS -->|Build, Tag & Push| ECR
+    JENKINS -->|Deploy: update-service| ECS_CLUSTER
+    
     CLIENT -->|HTTP :80 Ingress| ALB
     ALB -->|Route /api/v1/*| BACKEND
     ALB -->|Route /* (SPA)| FRONTEND
@@ -65,7 +71,8 @@ Every component is architected to maximize the 12-Month AWS Free Tier and minimi
 | AWS Service | Resource Specification | Free Tier Allowance | Estimated Monthly Cost |
 |---|---|---|---|
 | **Amazon RDS PostgreSQL** | `db.t3.micro` Single-AZ, 20GB `gp2`, backup 7 days | 750 hrs/month (12 mos free) | **$0.00 / mo** *(~$14.50 post-free)* |
-| **Amazon VPC & Subnets** | 1 VPC, 4 Subnets, 1 IGW, 3 Security Groups | Always Free | **$0.00 / mo** |
+| **Amazon EC2 (Jenkins)** | `t2.micro` Linux, 8GB `gp2` EBS | 750 hrs/month (12 mos free) | **$0.00 / mo** *(~$8.50 post-free)* |
+| **Amazon VPC & Subnets** | 1 VPC, 4 Subnets, 1 IGW, 4 Security Groups | Always Free | **$0.00 / mo** |
 | **Amazon ECR** | 3 private repositories with 5-image lifecycle policy | 500 MB/month free tier | **~$0.10 / mo** |
 | **Amazon S3** | `ledgeragent-invoices-441214867393` (90-day lifecycle) | 5 GB storage + 20,000 GETs | **~$0.02 / mo** |
 | **AWS Secrets Manager** | `ledgeragent/jwt-secret`, `ledgeragent/groq-api-key`, `db-url` | $0.40 / secret / month | **~$1.20 / mo** |
@@ -84,7 +91,7 @@ Every component is architected to maximize the 12-Month AWS Free Tier and minimi
 - **Enterprise Upgrade Path:** When scaling to multi-task ECS clusters with multi-day human approval cycles, provision `cache.t4g.micro` and supply `REDIS_URL=redis://elasticache-host:6379/0`.
 
 ### 2. Public Subnet Placement with `assignPublicIp=ENABLED` (Zero NAT Gateway Fees)
-- **Decision:** ECS Fargate tasks are placed in public subnets with `assignPublicIp=ENABLED` to pull images from ECR and call AWS APIs directly.
+- **Decision:** ECS Fargate tasks and Jenkins EC2 are placed in public subnets with `assignPublicIp=ENABLED` to pull images from ECR and call AWS APIs directly.
 - **Rationale:** An AWS NAT Gateway costs **$32.40 / month** per AZ ($64.80/mo for Dual-AZ) plus data processing fees. By placing Fargate tasks in public subnets and locking down ingress via `App-SG` (which accepts traffic **exclusively from ALB-SG**), we achieve bank-grade zero-trust isolation without paying NAT fees.
 - **Enterprise Upgrade Path:** Provision private subnets with Dual-AZ NAT Gateways or AWS PrivateLink Interface Endpoints.
 
@@ -120,6 +127,7 @@ Every component is architected to maximize the 12-Month AWS Free Tier and minimi
 1. **ALB-SG:** Accepts HTTP (80) from public ingress (`0.0.0.0/0`).
 2. **App-SG:** Accepts port `8000` (FastAPI) and `8001` (Mock ERP) **strictly and exclusively** from `ALB-SG`. Direct internet access is blocked at the security group level.
 3. **DB-SG:** Accepts PostgreSQL port `5432` **strictly and exclusively** from `App-SG`. Direct internet access and load balancer traffic are rejected at the packet level.
+4. **Jenkins-SG:** Accepts SSH (22) and Web UI (8080) **strictly and exclusively from the operator's current public IP**.
 
 ---
 
@@ -156,4 +164,7 @@ cd c:\MyDrive\LedgerAgent\infra\aws
 
 # Step 8: End-to-End Verification & Health Inspection
 .\08-verify.ps1
+
+# Step 9: Provision Jenkins CI/CD Controller on EC2 t2.micro
+.\09-jenkins.ps1
 ```

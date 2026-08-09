@@ -135,9 +135,50 @@ Tested against the **DeepEval Golden Dataset of 30 synthetic PDF invoices** acro
 
 > 📑 *Full granular breakdown available in [docs/eval_report.md](docs/eval_report.md).*
 
+## ☁️ AWS ECS Fargate & Jenkins CI/CD (Region ap-south-1)
+
+LedgerAgent includes a student-budget-conscious, production-grade cloud deployment automation suite under [`infra/aws/`](infra/aws/) for AWS Account `441214867393`:
+
+```powershell
+cd c:\MyDrive\LedgerAgent\infra\aws
+
+# 1. Verify credentials & generate least-privilege IAM policy
+.\00-prereqs.ps1
+
+# 2. Provision Amazon ECR repositories with 5-image lifecycle policies
+.\01-ecr.ps1
+
+# 3. Provision VPC, Dual-AZ Subnets & Tiered Security Groups
+.\02-network.ps1
+
+# 4. Provision Amazon RDS PostgreSQL 16 & Secrets Manager credentials
+.\03-rds.ps1
+
+# 5. Provision Encrypted S3 Bucket & Application Secrets
+.\04-s3-secrets.ps1
+
+# 6. Build, tag & push Docker images to Amazon ECR
+.\05-push-images.ps1
+
+# 7. Provision ECS Fargate Cluster, Task Definitions & Cloud Map DNS
+.\06-ecs.ps1
+
+# 8. Provision Application Load Balancer & Path-Based Routing
+.\07-alb.ps1
+
+# 9. Verify live ALB endpoint & healthcheck
+.\08-verify.ps1
+
+# 10. Provision Jenkins CI/CD Controller on EC2 t2.micro
+.\09-jenkins.ps1
+```
+
+> 📑 *Detailed architecture diagrams, zero-trust security matrices, and monthly cost breakdowns (~$21.82/mo) are documented in [`docs/aws-architecture.md`](docs/aws-architecture.md) and [`docs/jenkins.md`](docs/jenkins.md).*
+
 ---
 
 ## 🎓 Technical Interview Defense & Architectural Decisions
+
 
 ### Q: Why LangGraph instead of CrewAI or AutoGen?
 **A:** In enterprise finance operations, processes require deterministic state machine topologies, strict cycle handling, conditional branching, and durable persistence. CrewAI and AutoGen rely on non-deterministic multi-agent conversational debates which are unsuitable for regulatory financial compliance. LangGraph provides first-class state checkpointing and the `interrupt_before` primitive for seamless Human-in-the-Loop workflows.
