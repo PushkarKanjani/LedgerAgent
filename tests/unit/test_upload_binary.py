@@ -20,17 +20,26 @@ def test_upload_real_binary_pdf_does_not_crash_serialization():
     Verifies that uploading a real binary PDF (containing raw %PDF bytes)
     successfully returns HTTP 201 and valid JSON without UTF-8 serialization errors.
     """
-    # 1. Generate real binary PDF byte content
+    # 1. Login to obtain valid JWT token
+    login_resp = client.post("/api/v1/auth/login", json={
+        "email": "uploader@ledgeragent.dev",
+        "password": "LedgerAgent@2026"
+    })
+    assert login_resp.status_code == 200
+    token = login_resp.json()["access_token"]
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # 2. Generate real binary PDF byte content
     pdf_bytes = b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n"
     
     file_payload = {
         "file": ("test_binary_invoice.pdf", io.BytesIO(pdf_bytes), "application/pdf")
     }
 
-    # 2. Perform POST request to upload endpoint
-    response = client.post("/api/v1/invoices/upload", files=file_payload)
+    # 3. Perform POST request to upload endpoint with Auth header
+    response = client.post("/api/v1/invoices/upload", files=file_payload, headers=headers)
 
-    # 3. Assert HTTP 201 Created
+    # 4. Assert HTTP 201 Created
     assert response.status_code == 201, f"Expected 201 Created, got {response.status_code}: {response.text}"
 
     # 4. Assert response is valid JSON and contains required JSON-safe fields
