@@ -8,9 +8,40 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%20Alpine-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Redis](https://img.shields.io/badge/Redis-7%20Alpine-DC382D.svg?logo=redis&logoColor=white)](https://redis.io/)
 [![AWS ECS Fargate](https://img.shields.io/badge/AWS-ECS%20Fargate-FF9900.svg?logo=amazonaws&logoColor=white)](https://aws.amazon.com/fargate/)
-[![Jenkins CI/CD](https://img.shields.io/badge/Jenkins-CI%2FCD%20Pipeline-D24939.svg?logo=jenkins&logoColor=white)](https://jenkins.io/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Active-0284c7.svg?logo=googlechrome&logoColor=white)](https://sponsors-ana-represented-indirect.trycloudflare.com)
+[![HTTPS / TLS](https://img.shields.io/badge/HTTPS%20%2F%20TLS-Free%20via%20Cloudflare-success.svg?logo=cloudflare&logoColor=white)](https://sponsors-ana-represented-indirect.trycloudflare.com)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins%20Auto--Deploy-D24939.svg?logo=jenkins&logoColor=white)](https://github.com/PushkarKanjani/LedgerAgent)
 [![Groq Llama 3.3 70B](https://img.shields.io/badge/LLM-Groq%20Llama%203.3%2070B-F55036.svg)](https://groq.com)
 [![DeepEval Golden Dataset](https://img.shields.io/badge/Evaluations-DeepEval%20Golden%2030-success.svg)](docs/eval_report.md)
+
+---
+
+## 🚀 Live Production System
+
+🌐 **Live Demo URL:** [https://sponsors-ana-represented-indirect.trycloudflare.com](https://sponsors-ana-represented-indirect.trycloudflare.com)
+
+The system is **currently running live in production** on AWS ECS Fargate (`ap-south-1`) with:
+- ✅ **AWS RDS PostgreSQL 16:** Durable database persistence for invoices, purchase orders, goods receipts, GL entries, and audit logs.
+- ✅ **Free Production HTTPS:** Secure TLS termination via Cloudflare Tunnel without custom domain costs.
+- ✅ **Jenkins 7-Stage CI/CD:** Auto-building and deploying on every git push to `main`.
+- ✅ **Dynamic Mathematical Variance Engine:** Regex-based monetary extraction and automatic 3-way reconciliation.
+- ✅ **Active HITL Guardrails:** Automatically routing invoices with $> 2.0\%$ variance (or $<\$10.00$ tolerance) to the Human-in-the-Loop review queue.
+- ✅ **JWT Role-Based Access Control (RBAC):** Token authentication with 12-round bcrypt password hashing.
+- ✅ **AWS Secrets Manager:** Secure credential management for database and API keys.
+- ✅ **Zero-Downtime Rolling Deployments:** Managed ECS Fargate task updates behind the Application Load Balancer.
+
+### 🔑 Demo Credentials:
+| Role | Email | Password | Permissions |
+|---|---|---|---|
+| **Reviewer** | `reviewer@ledgeragent.dev` | `LedgerAgent@2026` | Review HITL queue, Inspect 3-way match, Approve/Reject variances |
+| **Uploader** | `uploader@ledgeragent.dev` | `LedgerAgent@2026` | Upload invoices, view ingestion pipeline status |
+| **Admin** | `admin@ledgeragent.dev` | `LedgerAgent@2026` | Full system audit trail, user management, ledger entries |
+
+### ⚡ Quick Demo Workflow:
+1. **Happy Path (Auto-Post):** Upload a matching invoice $\rightarrow$ Status immediately resolves to `GL_POSTED`.
+2. **Price Variance (HITL Queue):** Upload an invoice with price variance $\rightarrow$ System triggers `PRICE_MISMATCH` ($> 2.0\%$) and escalates to `03 HITL Queue`.
+3. **Reviewer Inspection:** Log in as `reviewer@ledgeragent.dev`, open the HITL queue, click **Inspect**, and review the line-by-line 3-way comparison before approving or rejecting.
+4. **SHA-256 Deduplication:** Re-upload any previously processed invoice $\rightarrow$ Instantly blocked via cryptographic hash idempotency.
 
 ---
 
@@ -193,22 +224,43 @@ cd c:\MyDrive\LedgerAgent\infra\aws
 ### 🚀 Automated 7-Stage Jenkins Pipeline
 Every push to `main` executes an end-to-end automated deployment pipeline:
 1. **SCM Checkout:** Pulls commit and checks workspace integrity.
-2. **Bandit AST Security Scan:** Static security vulnerability audit in Python 3.11.
+2. **Bandit AST Security Scan:** Static security vulnerability audit in Python 3.11 container.
 3. **Pytest Smoke & Regression Suite:** Automated execution of authentication, persistence, and arithmetic test fixtures.
 4. **Docker Multi-Stage Builds:** Concurrent compilation of backend, mock-erp, and frontend (Vite ESBuild engine).
 5. **Amazon ECR Push:** Version tagging (`:${BUILD_NUMBER}`) and `:latest` manifest update.
 6. **ECS Fargate Zero-Downtime Deployment:** Rolling update across all microservices (`update-service --force-new-deployment`).
 7. **ALB Health Gate Verification:** Automated healthcheck polling against the live Load Balancer endpoint (`/api/v1/health`).
 
+> 📑 *Live Jenkins Dashboard: Monitor builds and deployments via the secured Jenkins Controller (accessible via AWS Security Group restrictions).*
+
 ---
 
 ## ✅ Production Features Implemented
 
-- **Database Persistence:** Fully operational on **AWS RDS PostgreSQL 16** with durable schemas, relationship constraints, and cascade protections for invoices, purchase orders, goods receipts, GL entries, and audit logs.
-- **State Checkpointing:** **Redis 7 checkpointer** active for LangGraph workflow state persistence, enabling sub-millisecond serialization and state resumption for human reviewers.
-- **Security & Role-Based Access Control (RBAC):** JWT authentication with `uploader`, `reviewer`, and `admin` roles, bcrypt password hashing (12 rounds), and AWS Secrets Manager integration.
-- **Zero-Cost HTTPS & Secure Ingress:** Production-grade TLS termination via Cloudflare Tunnel and AWS Application Load Balancer with path-based routing (`/` to SPA, `/api/v1/*` to API).
-- **Cost Optimization:** Scalable serverless Fargate compute, S3 Glacier lifecycle policies, and automated pause/resume tooling ([`99-pause-all.ps1`](infra/aws/99-pause-all.ps1) / [`98-resume-all.ps1`](infra/aws/98-resume-all.ps1)) achieving ~$21.82/month total cloud footprint.
+- ✅ **Database Persistence:** Fully operational on **AWS RDS PostgreSQL 16** with durable schemas, foreign key relationships, cascade protections, and stateful workflows.
+- ✅ **State Checkpointing:** **Redis 7 checkpointer** active for LangGraph workflow state persistence, enabling sub-millisecond serialization and state resumption for human reviewers.
+- ✅ **Security & Role-Based Access Control (RBAC):** JWT authentication with `uploader`, `reviewer`, and `admin` roles, bcrypt password hashing (12 rounds), and AWS Secrets Manager integration.
+- ✅ **Zero-Cost HTTPS & Secure Ingress:** Production-grade TLS termination via Cloudflare Tunnel and AWS Application Load Balancer with path-based routing (`/` to SPA, `/api/v1/*` to API).
+- ✅ **Mathematical Variance Engine:** Dynamic regex-based monetary extraction with automated 3-way matching (invoice vs PO vs GR), routing invoices with $> 2.0\%$ variance to the HITL queue.
+- ✅ **CI/CD Automation:** Jenkins 7-stage pipeline (Bandit $\rightarrow$ Pytest $\rightarrow$ Docker build $\rightarrow$ ECR push $\rightarrow$ ECS deploy $\rightarrow$ ALB health $\rightarrow$ notifications).
+- ✅ **Cost Optimization:** Scalable serverless Fargate compute, S3 Glacier lifecycle policies, and automated pause/resume tooling ([`99-pause-all.ps1`](infra/aws/99-pause-all.ps1) / [`98-resume-all.ps1`](infra/aws/98-resume-all.ps1)) achieving ~$21.82/month total cloud footprint.
+
+---
+
+## 🔥 Recent Enhancements (August 2026)
+
+### Dynamic Mathematical Variance Calculation
+- **Replaced hardcoded string matching** with robust regex-based monetary extraction.
+- System now **dynamically calculates** invoice-to-PO variance percentages.
+- Any discrepancy **$> 2.0\%$ (or $>\$10.00$ tolerance)** automatically routes to the HITL queue.
+- Itemized variance breakdown showing exact dollar differences per line item.
+- **Random invoice generator** ([`scripts/generate_random_invoice.py`](scripts/generate_random_invoice.py)) now produces unlimited test invoices with mathematically diverse totals for rigorous testing.
+
+### Infrastructure Improvements
+- Cloudflare Tunnel for **free, instant HTTPS** (no custom domain required).
+- Jenkins CI/CD auto-deployment on every git push to `main`.
+- AWS ECS Fargate zero-downtime rolling deployments.
+- AWS Cloud Map service discovery for resilient microservice DNS resolution (`ledgeragent.local`).
 
 ---
 
